@@ -26,7 +26,7 @@ public:
     }
     void disp(){
         student::disp();
-        cout << "Course Id is: " << endl;
+        cout << "Course Id is: " <<course_id<< endl;
     }
 };
 int main(){
