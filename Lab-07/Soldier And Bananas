@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int n,k,w,i,sum=0,sub=0,z=0;
+    scanf("%d %d %d",&k,&n,&w);
+    for(i=1;i<=w;i++)
+    {
+        z=i*k;
+        sum=sum+z;
+    }
+    sub=sum-n;
+    if(sum>n){
+    printf("%d\n",sub);
+    }
+    else
+    {
+        printf("0\n");
+    }
+    return 0;
+
+}
