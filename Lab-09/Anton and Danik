@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<string.h>
+ 
+  
+int main()
+{
+    int i,n;
+    scanf("%d",&n);
+   char s[n]; scanf("%s", s);
+
+
+    int cnt=0,dst=0;
+    for(i=0; i<n; i++)
+    {
+
+        if(s[i]=='D')
+            cnt++;
+        else if(s[i]=='A')
+            dst++;
+    }
+    if(cnt>dst){
+        printf("Danik\n");
+    }
+    else if(cnt<dst){
+    printf("Anton\n");}
+    else if(cnt==dst){
+        printf("Friendship\n");}
+    return 0;
+
+
+}
