@@ -1,0 +1,73 @@
+#include <bits/stdc++.h>
+using namespace std;
+class Array
+{
+public:
+    int arr1[10];
+    char arr2[10];
+    float arr3[10];
+    int x=0,y=0,z=0;
+
+    void insert(int index, int value)
+    {
+
+        for(int i=0;i<index;i++){
+            arr1[x++]=value;
+        }
+    }
+
+    void insert(int index,char value)
+    {
+
+        for(int i=0;i<index;i++){
+            arr2[y++]=value;
+        }
+    }
+
+    void insert(int index,float value)
+    {
+
+        for(int i=0;i<index;i++){
+            arr3[z++]=value;
+        }
+    }
+
+    void output()
+    {
+          cout<<"Integer Array :"<<" ";
+        for(int i=0;i<x;i++){
+            cout<<arr1[i]<<" ";
+        }
+        cout<<endl;
+    }
+    void output1()
+    {
+           cout<<"Character Array :"<<" ";
+        for(int i=0;i<y;i++){
+            cout<<arr2[i]<<" ";
+        }
+        cout<<endl;
+    }
+    void output2()
+    {
+           cout<<"Float Array :"<<" ";
+        for(int i=0;i<z;i++){
+            cout<<arr3[i]<<" ";
+        }
+        cout<<endl;
+    }
+
+};
+int main()
+{
+    Array obj;
+    obj.insert(5, 07);
+    obj.insert(5, 'A');
+    obj.insert(5, 3.33f);
+
+    obj.output();
+    obj.output1();
+    obj.output2();
+
+
+}
