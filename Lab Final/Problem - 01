@@ -1,0 +1,42 @@
+#include<bits/stdc++.h>
+using namespace std;
+class Manchester_United
+{
+private:
+      int coach;
+      int player;
+public:
+      void set_data(int x,int y)
+      {
+            coach=x;
+            player=y;
+      }
+      void getData(Manchester_United ronaldo,Manchester_United fernandez)
+      {
+        //cout<<abs(ronaldo.coach-fernandez.coach)<<" "<<abs(ronaldo.player-fernandez.player)<<endl;
+      if((ronaldo.coach==fernandez.coach)&&(ronaldo.player==fernandez.player))
+      {
+            cout<<"Both Are Equal"<<endl;
+      }
+      else
+      {
+            cout<<"They Are Not Equal"<<endl;
+      }
+      }
+      Manchester_United operator++(){
+      coach++;
+      player++;
+      }
+};
+int main()
+{
+      Manchester_United ronaldo;
+      Manchester_United fernandez;
+      ronaldo.set_data(4,5);
+      fernandez.set_data(5,6);
+      cout<<"Before Increment :"<<" ";
+      ronaldo.getData(fernandez,ronaldo);
+      ++ronaldo;
+      cout<<"After Increment :"<<" ";
+      fernandez.getData(ronaldo,fernandez);
+}
