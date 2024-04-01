@@ -9,4 +9,4 @@ Intake: 51
 
 Section: 1
 
-Course Teacher: Khan Md Hasib
+
